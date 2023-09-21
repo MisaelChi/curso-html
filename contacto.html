@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="assets/favicon4.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Contactame</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">AudioVisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form action="contacto.html">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required pattern="[A-Za-z]" >
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido" required pattern="[A-Za-a]">
+            <label for="mail">Correo electronico</label>
+            <input type="text" name="mail" id="mail" placeholder="Introduce tu correo electronico" required>
+            <label for="ciudad">De donde nos contactas</label>
+            <select id="ciudad" name="ciudad">
+                <optgroup label="Yucatan">
+                    <option value="Merida" selected="selected">Merida</option>
+                    <option value="Kanasin">Kanasin</option>
+                    <option value="Caucel">Caucel</option>
+                <optgroup label="Campeche">
+                    <option value="Campeche">Campeche</option>
+                    <option value="Escarcega">Escarcega</option>
+                    <option value="Cd del Carmen">Cd del Carmen</option>
+                <optgroup label="Quintana Roo">
+                    <option value="Cancun">Cancun</option>
+                    <option value="Rivera Maya">Rivera Maya</option>
+                    <option value="Cozumel">Cozumel</option>
+            </select>
+            <label for="comentario">Informacion adicional que nos quieras propocionar</label>
+            <textarea id="comentario" name="comentario" placeholder="Escriba su comentario" rows="10" cols="50"></textarea>
+            <label for="motivo">Motivo por el cual nos contactas</label><br>
+            <input type="checkbox" id="motivo" name="motivo" value="comercial"><i>Comercial</i>
+            <input type="checkbox" id="motivo" name="motivo" value="apoyo"><i>Apoyo</i>
+            <input type="checkbox" id="motivo" name="motivo" value="rescate"><i>Rescate</i>
+            <input type="checkbox" id="motivo" name="motivo" value="informacion"><i>Informacion</i>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+</body>
+</html>
